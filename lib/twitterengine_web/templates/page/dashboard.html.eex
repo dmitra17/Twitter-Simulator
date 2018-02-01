@@ -1,0 +1,136 @@
+
+<head>
+<script src="/js/app.js"></script>
+
+<body style="background-color:DodgerBlue;">
+	<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet'>
+
+	<style>
+
+	
+
+	h1 {
+		margin-top: -45px;
+		margin-left: -95px;
+		font-family: 'Arimo';font-size: 25px;
+		color: white;
+	}
+
+	h3 {
+		
+		font-family: 'Arimo';font-size: 16px;
+		margin-left: -180px;
+		color: white;
+	}
+
+	button {
+		background-color: #4CBDF8;
+    	border: none;
+    	color: black;
+    	padding: 1px 10px;
+    	display: inline-block;
+		margin-left: -180px;
+		border-radius: 4px;
+    	font-size: 13px;
+	}
+	p {
+		margin-top: -80px;
+		color: white;
+	}
+
+	img {
+		margin-left: -180px;
+		border-radius: 10px;
+		margin-top: -10px;
+	}
+
+	textarea {
+		margin-left: -180px;
+		border-radius: 4px;
+	}
+
+	input {
+		margin-left: -180px;
+		border-radius: 4px;
+	}
+
+	#RightPanel {
+		margin-top: -410px;
+	}
+
+	#retweet {
+		margin-left: 1px;
+	}
+
+	
+	</style>
+</head>
+<body>
+
+	 <img src="http://www.ewbmapc.com/resources/larry_the_twitter_bird_by_draganja-d52q3en.png.jpeg?timestamp=1406245879713" 
+	 alt="Twitter Clone application" style="width:70px;height:70px;">
+	<header>
+		<div class="wrapper" style="background-color:DodgerBlue;">
+			<h1>Twitter Clone</h1>               
+		</div>
+		<p align="right">
+		<button id="btnLogOut" onclick="location.href = 'http://localhost:4000';">Log Out</button>
+		</p>	
+	</header>
+	
+	<div id="content">
+		<div class="wrapper">
+			<div class="panel right" style="background-color:DodgerBlue;">
+				<br><br><h3>Tweet</h3>
+						<textarea id="tweetContent"></textarea><br>
+                        <button id="btnTweet">Tweet!</button>
+			</div>
+
+			
+
+			<div class="panel right" style="background-color:DodgerBlue;">
+				<h3>Search Twitter</h3>
+						<input id="hashtag" placeholder = "#" type="text">
+						<div id= "hashtagArea" class='row'></div>
+                        <button id="btnhashtag">Search!</button>
+				<h3>Follow on Twitter</h3>
+						<input id="username2" placeholder = "@" type="text"><br>
+                        <button id="btnFollow" >Follow!</button>
+			</div>
+
+			<div id="tweets" style="background-color:DodgerBlue;">
+				<h3>Retweet
+				<img id = "retweet" src="http://www.hacktheunion.org/wp-content/uploads/2017/10/retweet1600.png" 
+	 			alt="Twitter Clone application" style="width:30px;height:30px;">				
+				</h3>
+					<div id='tweet-list' class='row'>
+					</div>
+					<button type="submit" id="btnRetweet" value="Retweet this!">Retweet!</button>
+					
+			</div>		
+			
+		<div id="RightPanel" style="width: 800; height: 100%; float: right;">
+
+			<div class="panel right" style="background-color:DodgerBlue;">
+				<h3>Query</h3>
+						<div id="userTweetsArea" class ='row'></div>
+                        <button id="btnUserTweets">Tweets!</button>
+
+			</div>
+
+			<div class="panel right" style="background-color:DodgerBlue;">
+				<br><br><br><h3>Mentions</h3>
+						<div id="mentionsArea" class ='row'></div>
+                        <button id="btnMyMentions">Get Mentions!</button>
+			</div>
+
+           
+
+		</div>
+			
+			
+			
+			
+			
+		</div>
+	</div>

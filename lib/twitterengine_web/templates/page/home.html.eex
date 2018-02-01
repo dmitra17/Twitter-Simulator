@@ -1,0 +1,79 @@
+
+	<!--<div id='message-list' class='row'></div>-->
+
+	<body style="background-color:DarkSlateBlue;">
+	<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet'>
+
+	<style>
+
+	body { 
+    background-image: url("https://cnet3.cbsistatic.com/img/qABHYKbVE2wfI626nwuoEBVQj9w=/1600x900/2017/02/28/a30887fc-ed2c-4ab6-8a9f-56d205eb51f8/gettyimages-541820918.jpg");	
+    background-attachment: fixed;
+    background-position: 50% 50%; 
+	}
+
+	h1 {
+		margin-top: -100px;
+		font-family: 'Arimo';font-size: 30px;
+		margin-left: 700px;
+		color: white;
+	}
+	h3 {
+		font-family: 'Arimo';font-size: 20px;
+		margin-left: 600px;
+		color: white;
+	}
+	p {
+		font-family: 'Arimo';font-size: 14px;
+		margin-left: 600px;
+		color: white;
+	}
+
+	img {
+		margin-left: 590px;
+		margin-top: -20px;
+		border-radius: 10px;
+	}
+
+	input {
+		margin-left: 600px;
+		border-radius: 8px;
+	}
+	button {
+	background-color: #4CBDF8;
+    border: none;
+    color: black;
+    padding: 1px 15px;
+    display: inline-block;
+    font-size: 13px;
+	margin-left: 600px;
+	border-radius: 6px;
+}
+
+	</style>
+
+	 <img src="http://www.ewbmapc.com/resources/larry_the_twitter_bird_by_draganja-d52q3en.png.jpeg?timestamp=1406245879713" 
+	 alt="Twitter Clone application" style="width:100px;height:100px;">
+		<div>
+			<h1><center>Twitter Clone</center></h1>
+				<br>
+				<h3>Login</h3>
+				<input id="username" placeholder = "username" type="text">
+				<input id="password" placeholder = "password" type="password"><br><br>
+				<button id="signin">Sign In</button>
+		</div>
+
+		<br><br><br>
+
+	<div id="content">
+		<div>
+			<p>Don't have an account? </p>
+				<p>username</p>
+				<input id="newUsername" placeholder = "username" type="text"><br>
+				<p>password</p>
+				<input id="newPassword" placeholder = "********" type="password"><br><br>
+				<button id="signup" type="submit" value="Create Account">Create Account</button>						
+			
+		</div>
+	</div>
+
